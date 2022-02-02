@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A basic Marko app.">
+        <title>${input.title}</title>
+    </head>
+    <body>
+        <${input.renderBody}/>
+    </body>
+</html>
+style {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap');
+    @import "https://unpkg.com/open-props";
+    
+    html,
+    body {
+        font-family: 'Inter', sans-serif;
+        padding: 0;
+        margin: 0;
+        background: white;
+        min-height: 100vh;
+        color: var(--gray-8);
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--blue-8);
+    }
+
+    ::selection {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: var(--font-size-8);
+    }
+}

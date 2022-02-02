@@ -1,0 +1,43 @@
+import heroImage from "../../../assets/tarry-tracker.webp";
+import orangeThemeImage from "../../../assets/tarry-theme-red-orange.webp";
+import invoicePreviewImage from "../../../assets/tarry-invoice-preview.webp";
+import taskListImage from "../../../assets/tarry-tasks.webp";
+import greenThemeImage from "../../../assets/tarry-theme-green.webp";
+
+app-layout title="Tarry - An easy to use time tracking and invoice creation app."
+    hero [
+        title="Tarry."
+        subtitle="verb"
+        content="Delay acting or doing, stay in place."
+        image=heroImage
+        primaryaction={ text: "Login", link: "https://tarry.app" }
+        secondaryaction={ text: "Register", link: "https://tarry.app" }
+    ]
+    section [
+        title="Easy Tracking"
+        image=orangeThemeImage
+        content="Tarry makes time tracking easy - just select a task and go!"
+    ]
+    section [
+        title="Effortless Invoices"
+        image=invoicePreviewImage
+        content="Create invoices in minutes, all based on hours tracked."
+        reverse=true
+    ]
+    section [
+        title="Project Management"
+        image=taskListImage
+        content="No frills task and project management."
+    ]
+    section [
+        title="Custom Theming"
+        image=greenThemeImage
+        content="Pick your favorite colors to create your unique look."
+        reverse=true
+    ]
+    section [
+        title="Open Source"
+        content="Tarry is an open source project, all code is publicly available."
+    ]
+    quote
+    footer
